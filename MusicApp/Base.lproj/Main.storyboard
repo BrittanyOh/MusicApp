@@ -19,6 +19,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QA7-kD-Veb">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.16431490384615385" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="DJV-nC-6Qk"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t98-h3-KHW">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCA-3E-6r8">
@@ -58,7 +64,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0017951649600628989" green="0.11180462651097686" blue="0.13606249999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0017951649600628989" green="0.083938460097602988" blue="0.13606249999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="QxT-2D-zma" firstAttribute="top" secondItem="dCA-3E-6r8" secondAttribute="bottom" constant="32" id="CXq-Yv-6TT"/>
                                     <constraint firstAttribute="trailing" secondItem="dCA-3E-6r8" secondAttribute="trailing" constant="1" id="J7r-2O-w5h"/>
@@ -75,9 +81,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0027195471007291877" green="0.16937604879797968" blue="0.206125" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="QA7-kD-Veb" firstAttribute="leading" secondItem="t98-h3-KHW" secondAttribute="trailing" constant="-158" id="AxQ-VX-jkT"/>
                             <constraint firstItem="t98-h3-KHW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-150" id="MRn-xq-ikX"/>
-                            <constraint firstItem="t98-h3-KHW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="db3-bg-jRg"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t98-h3-KHW" secondAttribute="bottom" id="t2N-Um-h3g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t98-h3-KHW" secondAttribute="bottom" id="cYw-wo-D71"/>
+                            <constraint firstItem="QA7-kD-Veb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dWU-oa-NCr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QA7-kD-Veb" secondAttribute="bottom" id="s0S-c4-vBL"/>
+                            <constraint firstItem="t98-h3-KHW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ymi-rb-tNZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="7MJ-Oc-BfK">
@@ -90,7 +99,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="leadingConstraint" destination="MRn-xq-ikX" id="UMS-QJ-m0O"/>
-                        <outlet property="menuView" destination="8bC-Xf-vdC" id="rGs-qF-VCm"/>
+                        <outlet property="menuShadow" destination="AxQ-VX-jkT" id="Fji-aj-REJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -207,6 +216,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KHw-W2-I72" userLabel="menu">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K21-nn-khZ">
+                                        <frame key="frameInset" minX="-158" minY="64" width="155" height="603"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.1643149038" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="155" id="zKX-Ul-yO9"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2S-d0-rgs">
+                                        <frame key="frameInset" minX="-150" minY="64" width="150" height="603"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4B-fr-RfA">
+                                                <frame key="frameInset" minX="8" minY="25" width="141" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="4Y0-kS-FfW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="Search">
+                                                    <color key="titleColor" red="0.0050842457859999997" green="0.57858550610000004" blue="0.71009374999999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJO-bH-Ac4">
+                                                <frame key="frameInset" minX="8" minY="87" width="141" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="zaE-k6-8gU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="Now Playing">
+                                                    <color key="titleColor" red="0.0050842457859999997" green="0.57858550610000004" blue="0.71009374999999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shA-rU-1I9">
+                                                <frame key="frameInset" minX="9" minY="140" width="141" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="iif-43-Ftx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="My Music">
+                                                    <color key="titleColor" red="0.0050842457859999997" green="0.57858550610000004" blue="0.71009374999999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.00179516496" green="0.083938460100000001" blue="0.1360625" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="1Jf-ec-lRG"/>
+                                            <constraint firstItem="shA-rU-1I9" firstAttribute="top" secondItem="tJO-bH-Ac4" secondAttribute="bottom" constant="23" id="JmP-7H-uPa"/>
+                                            <constraint firstItem="tJO-bH-Ac4" firstAttribute="trailing" secondItem="b4B-fr-RfA" secondAttribute="trailing" id="QkM-9l-z5a"/>
+                                            <constraint firstItem="tJO-bH-Ac4" firstAttribute="top" secondItem="b4B-fr-RfA" secondAttribute="bottom" constant="32" id="Uad-eX-cwK"/>
+                                            <constraint firstItem="b4B-fr-RfA" firstAttribute="leading" secondItem="h2S-d0-rgs" secondAttribute="leadingMargin" id="ZLH-in-L1C"/>
+                                            <constraint firstItem="b4B-fr-RfA" firstAttribute="top" secondItem="h2S-d0-rgs" secondAttribute="top" constant="25" id="d8A-qQ-xzM"/>
+                                            <constraint firstItem="shA-rU-1I9" firstAttribute="leading" secondItem="h2S-d0-rgs" secondAttribute="leading" constant="9" id="gVB-XE-q2A"/>
+                                            <constraint firstAttribute="trailing" secondItem="shA-rU-1I9" secondAttribute="trailing" id="iNk-Ri-A5u"/>
+                                            <constraint firstAttribute="trailing" secondItem="b4B-fr-RfA" secondAttribute="trailing" constant="1" id="mMR-2h-Bl2"/>
+                                            <constraint firstItem="tJO-bH-Ac4" firstAttribute="leading" secondItem="b4B-fr-RfA" secondAttribute="leading" id="qhj-Ea-yan"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0027195471010000001" green="0.16937604880000001" blue="0.206125" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="K21-nn-khZ" firstAttribute="leading" secondItem="h2S-d0-rgs" secondAttribute="trailing" constant="-158" id="Ik7-9q-awT"/>
+                                    <constraint firstItem="h2S-d0-rgs" firstAttribute="leading" secondItem="KHw-W2-I72" secondAttribute="leading" constant="-150" id="yNy-4X-4S0"/>
+                                </constraints>
+                            </view>
                             <searchBar contentMode="redraw" barStyle="blackTranslucent" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="SMF-zV-F77">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="n4S-IN-QyR"/>

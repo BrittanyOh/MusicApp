@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A684EA851F1FFE3D006377C6 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A684EA841F1FFE3D006377C6 /* Search.swift */; };
 		A68603791F1E8F4F00D37E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68603781F1E8F4F00D37E2F /* AppDelegate.swift */; };
 		A686037B1F1E8F4F00D37E2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686037A1F1E8F4F00D37E2F /* ViewController.swift */; };
 		A686037E1F1E8F4F00D37E2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A686037C1F1E8F4F00D37E2F /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A684EA841F1FFE3D006377C6 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		A68603751F1E8F4F00D37E2F /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68603781F1E8F4F00D37E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A686037A1F1E8F4F00D37E2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				A68603781F1E8F4F00D37E2F /* AppDelegate.swift */,
 				A686037A1F1E8F4F00D37E2F /* ViewController.swift */,
 				A686037C1F1E8F4F00D37E2F /* Main.storyboard */,
+				A684EA841F1FFE3D006377C6 /* Search.swift */,
 				A68603821F1E8F4F00D37E2F /* Assets.xcassets */,
 				A68603841F1E8F4F00D37E2F /* LaunchScreen.storyboard */,
 				A68603871F1E8F4F00D37E2F /* Info.plist */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A686037B1F1E8F4F00D37E2F /* ViewController.swift in Sources */,
+				A684EA851F1FFE3D006377C6 /* Search.swift in Sources */,
 				A68603791F1E8F4F00D37E2F /* AppDelegate.swift in Sources */,
 				A68603811F1E8F4F00D37E2F /* MusicApp.xcdatamodeld in Sources */,
 			);
