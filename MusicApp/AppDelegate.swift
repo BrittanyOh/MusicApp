@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  MusicApp
 //
-//  Created by Brittany Ohalete on 7/18/17.
 //  Copyright © 2017 Britt&Gelly. All rights reserved.
 //
 
@@ -10,7 +9,7 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
 
     var window: UIWindow?
 

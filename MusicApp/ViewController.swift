@@ -7,16 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
+    @IBOutlet var menuView: UIView!
 
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
+    var menuShowing = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuView.layer.shadowOpacity = 1
     }
 
     @IBAction func toggleMenu(_ sender: AnyObject) {
-        leadingConstraint.constant = 0
+        
+        if(menuShowing){
+            leadingConstraint.constant = 0
+            menuShowing = false
+        }else{
+            leadingConstraint.constant = -150
+            menuShowing = true
+        }
     }
 
 }

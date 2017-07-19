@@ -53,6 +53,9 @@
                                         <state key="normal" title="My Music">
                                             <color key="titleColor" red="0.0050842457859999997" green="0.57858550610000004" blue="0.71009374999999997" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="8lp-gb-Vbc" kind="show" id="PIa-CT-4b9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0017951649600628989" green="0.11180462651097686" blue="0.13606249999999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,7 +90,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="leadingConstraint" destination="MRn-xq-ikX" id="UMS-QJ-m0O"/>
-                        <outlet property="toggleMenu" destination="i21-Hg-B6P" id="ozU-YN-Y3H"/>
+                        <outlet property="menuView" destination="8bC-Xf-vdC" id="rGs-qF-VCm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -135,10 +138,44 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Now Playing" id="bMy-Ft-0BS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="ePC-Rv-AFI">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="toggleMenu:" destination="BYZ-38-t0r" id="4GT-Pf-GwF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxA-lr-n0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1196" y="1149.1754122938532"/>
+        </scene>
+        <!--My Music-->
+        <scene sceneID="2Ba-QA-kRc">
+            <objects>
+                <viewController id="8lp-gb-Vbc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5SH-TL-bbN"/>
+                        <viewControllerLayoutGuide type="bottom" id="nP7-WN-s47"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yAB-Qx-xkc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.16862745098039217" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Music" id="ccf-HF-4qZ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="KNs-iE-dq4">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="toggleMenu:" destination="BYZ-38-t0r" id="tGZ-6l-vkZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yu9-ZL-2mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="1149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gIo-xT-aq6">
@@ -177,13 +214,21 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.0027195471010000001" green="0.16937604880000001" blue="0.206125" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.16862745098039217" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="SMF-zV-F77" firstAttribute="top" secondItem="Hkb-pM-gMd" secondAttribute="topMargin" constant="63" id="DC3-uh-PKt"/>
                             <constraint firstItem="SMF-zV-F77" firstAttribute="leading" secondItem="Hkb-pM-gMd" secondAttribute="leadingMargin" id="oGM-Y3-64A"/>
                             <constraint firstItem="SMF-zV-F77" firstAttribute="trailing" secondItem="Hkb-pM-gMd" secondAttribute="trailingMargin" id="reG-ba-8qE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Search" id="Gkz-Df-OVl">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="ffE-fT-aiq">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="toggleMenu:" destination="BYZ-38-t0r" id="Fx2-ea-HTW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIs-rx-ZxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
