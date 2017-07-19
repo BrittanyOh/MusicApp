@@ -14,6 +14,10 @@
 		A68603831F1E8F4F00D37E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68603821F1E8F4F00D37E2F /* Assets.xcassets */; };
 		A68603861F1E8F4F00D37E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68603841F1E8F4F00D37E2F /* LaunchScreen.storyboard */; };
 		A68603911F1E8F4F00D37E2F /* MusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68603901F1E8F4F00D37E2F /* MusicAppUITests.swift */; };
+		F798FC441F1FB4FB0028F2EE /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = F798FC411F1FB4FB0028F2EE /* forward.png */; };
+		F798FC451F1FB4FB0028F2EE /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = F798FC421F1FB4FB0028F2EE /* pause.png */; };
+		F798FC461F1FB4FB0028F2EE /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = F798FC431F1FB4FB0028F2EE /* play.png */; };
+		F798FC481F1FB5030028F2EE /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = F798FC471F1FB5030028F2EE /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		A686038C1F1E8F4F00D37E2F /* MusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68603901F1E8F4F00D37E2F /* MusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppUITests.swift; sourceTree = "<group>"; };
 		A68603921F1E8F4F00D37E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F798FC411F1FB4FB0028F2EE /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forward.png; path = Assets.xcassets/AppIcon.appiconset/forward.png; sourceTree = "<group>"; };
+		F798FC421F1FB4FB0028F2EE /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Assets.xcassets/AppIcon.appiconset/pause.png; sourceTree = "<group>"; };
+		F798FC431F1FB4FB0028F2EE /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Assets.xcassets/AppIcon.appiconset/play.png; sourceTree = "<group>"; };
+		F798FC471F1FB5030028F2EE /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Assets.xcassets/AppIcon.appiconset/back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 		A68603771F1E8F4F00D37E2F /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				F798FC471F1FB5030028F2EE /* back.png */,
+				F798FC411F1FB4FB0028F2EE /* forward.png */,
+				F798FC421F1FB4FB0028F2EE /* pause.png */,
+				F798FC431F1FB4FB0028F2EE /* play.png */,
 				A68603781F1E8F4F00D37E2F /* AppDelegate.swift */,
 				A686037A1F1E8F4F00D37E2F /* ViewController.swift */,
 				A686037C1F1E8F4F00D37E2F /* Main.storyboard */,
@@ -184,7 +196,11 @@
 			files = (
 				A68603861F1E8F4F00D37E2F /* LaunchScreen.storyboard in Resources */,
 				A68603831F1E8F4F00D37E2F /* Assets.xcassets in Resources */,
+				F798FC451F1FB4FB0028F2EE /* pause.png in Resources */,
 				A686037E1F1E8F4F00D37E2F /* Main.storyboard in Resources */,
+				F798FC481F1FB5030028F2EE /* back.png in Resources */,
+				F798FC441F1FB4FB0028F2EE /* forward.png in Resources */,
+				F798FC461F1FB4FB0028F2EE /* play.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +424,7 @@
 				A68603971F1E8F4F00D37E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A68603981F1E8F4F00D37E2F /* Build configuration list for PBXNativeTarget "MusicAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +433,7 @@
 				A686039A1F1E8F4F00D37E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
