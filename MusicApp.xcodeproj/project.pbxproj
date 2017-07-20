@@ -15,6 +15,8 @@
 		A68603831F1E8F4F00D37E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68603821F1E8F4F00D37E2F /* Assets.xcassets */; };
 		A68603861F1E8F4F00D37E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68603841F1E8F4F00D37E2F /* LaunchScreen.storyboard */; };
 		A68603911F1E8F4F00D37E2F /* MusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68603901F1E8F4F00D37E2F /* MusicAppUITests.swift */; };
+		F74EB7EF1F21008700A27BC7 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EB7EE1F21008700A27BC7 /* PlayerVC.swift */; };
+		F74EB7F11F210F3600A27BC7 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F74EB7F01F210F3600A27BC7 /* song.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		A686038C1F1E8F4F00D37E2F /* MusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68603901F1E8F4F00D37E2F /* MusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppUITests.swift; sourceTree = "<group>"; };
 		A68603921F1E8F4F00D37E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F74EB7EE1F21008700A27BC7 /* PlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
+		F74EB7F01F210F3600A27BC7 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		A68603771F1E8F4F00D37E2F /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				F74EB7F01F210F3600A27BC7 /* song.mp3 */,
 				A68603781F1E8F4F00D37E2F /* AppDelegate.swift */,
 				A686037A1F1E8F4F00D37E2F /* ViewController.swift */,
 				A686037C1F1E8F4F00D37E2F /* Main.storyboard */,
@@ -89,6 +94,7 @@
 				A68603841F1E8F4F00D37E2F /* LaunchScreen.storyboard */,
 				A68603871F1E8F4F00D37E2F /* Info.plist */,
 				A686037F1F1E8F4F00D37E2F /* MusicApp.xcdatamodeld */,
+				F74EB7EE1F21008700A27BC7 /* PlayerVC.swift */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68603861F1E8F4F00D37E2F /* LaunchScreen.storyboard in Resources */,
+				F74EB7F11F210F3600A27BC7 /* song.mp3 in Resources */,
 				A68603831F1E8F4F00D37E2F /* Assets.xcassets in Resources */,
 				A686037E1F1E8F4F00D37E2F /* Main.storyboard in Resources */,
 			);
@@ -209,6 +216,7 @@
 				A684EA851F1FFE3D006377C6 /* Search.swift in Sources */,
 				A68603791F1E8F4F00D37E2F /* AppDelegate.swift in Sources */,
 				A68603811F1E8F4F00D37E2F /* MusicApp.xcdatamodeld in Sources */,
+				F74EB7EF1F21008700A27BC7 /* PlayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
