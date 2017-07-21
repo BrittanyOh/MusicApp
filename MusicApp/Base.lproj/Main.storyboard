@@ -127,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jW-uk-Shf">
-                                <rect key="frame" x="156" y="437" width="75" height="66"/>
+                                <rect key="frame" x="152" y="481" width="75" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play" image="play"/>
                                 <connections>
@@ -135,19 +135,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ell-Sf-FqC">
-                                <rect key="frame" x="76" y="438" width="72" height="64"/>
+                                <rect key="frame" x="73" y="482" width="72" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" title="Backward" image="back">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="rewindActionWithSender:" destination="GV3-H2-Il4" eventType="touchUpInside" id="qvs-WN-tuW"/>
+                                </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="center" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-Qj-1hU">
-                                <rect key="frame" x="41" y="405" width="293" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-aU-OqG">
-                                <rect key="frame" x="239" y="438" width="66" height="68"/>
+                                <rect key="frame" x="235" y="482" width="66" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Foward" image="forward"/>
                             </button>
@@ -155,6 +154,13 @@
                                 <rect key="frame" x="41" y="95" width="293" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nYz-hg-FLB">
+                                <rect key="frame" x="39" y="443" width="297" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="audioTimeSlider:" destination="GV3-H2-Il4" eventType="valueChanged" id="xpO-WX-CKe"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
@@ -166,6 +172,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playButton" destination="4jW-uk-Shf" id="Tl7-W5-Zgr"/>
+                        <outlet property="rewindButton" destination="ell-Sf-FqC" id="lSr-H1-05r"/>
+                        <outlet property="scrubber" destination="nYz-hg-FLB" id="nkq-sc-tdO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxA-lr-n0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
