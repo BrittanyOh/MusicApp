@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04F7E4F4C775BA072ADE4518BE48B5FE"
+               BlueprintIdentifier = "54DE0C5AA1DA22F382B70EAB452F130A"
                BuildableName = "Pods_MusicApp.framework"
                BlueprintName = "Pods-MusicApp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "04F7E4F4C775BA072ADE4518BE48B5FE"
+            BlueprintIdentifier = "54DE0C5AA1DA22F382B70EAB452F130A"
             BuildableName = "Pods_MusicApp.framework"
             BlueprintName = "Pods-MusicApp"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "04F7E4F4C775BA072ADE4518BE48B5FE"
-            BuildableName = "Pods_MusicApp.framework"
-            BlueprintName = "Pods-MusicApp"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
