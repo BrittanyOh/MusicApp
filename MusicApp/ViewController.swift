@@ -10,9 +10,7 @@ import UIKit
 class ViewController: UIViewController{
     
 
-    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var menuShadow: NSLayoutConstraint!
-    
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!    
     var menuShowing = true
     
     override func viewDidLoad() {
@@ -23,13 +21,11 @@ class ViewController: UIViewController{
         
         if(menuShowing){
             leadingConstraint.constant = 0
-            menuShadow.constant = -149
             
             UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
             menuShowing = false
         }else{
             leadingConstraint.constant = -150
-            menuShadow.constant = -158
             UIView.animate(withDuration: 0.2, animations: {self.view.layoutIfNeeded()})
             menuShowing = true
         }

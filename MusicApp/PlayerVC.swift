@@ -20,8 +20,25 @@ class PlayerVC : UIViewController {
     @IBOutlet weak var fowardButton: UIButton!
     @IBOutlet weak var rewindButton: UIButton!
     @IBOutlet weak var scrubber: UISlider!
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    var menuShowing = true
     
     var audioPlayer: AVAudioPlayer = AVAudioPlayer()
+    
+    //menu function
+    @IBAction func toggleMenu(_ sender: AnyObject) {
+        
+        if(menuShowing){
+            leadingConstraint.constant = 0
+            
+            UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
+            menuShowing = false
+        }else{
+            leadingConstraint.constant = -150
+            UIView.animate(withDuration: 0.2, animations: {self.view.layoutIfNeeded()})
+            menuShowing = true
+        }
+    }
     
     @IBAction func playAction(sender: UIButton){
         if (playButton.image(for: .normal) == #imageLiteral(resourceName: "pause")) {
