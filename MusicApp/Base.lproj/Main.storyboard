@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u1B-cd-jex">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u1B-cd-jex">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,14 +23,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkb-4a-DMz">
-                                <frame key="frameInset" minX="8" minY="91" width="351" height="30"/>
+                                <rect key="frame" x="8" y="91" width="351" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="Welcome"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t98-h3-KHW">
+                                <rect key="frame" x="-150" y="64" width="150" height="603"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCA-3E-6r8">
+                                        <rect key="frame" x="8" y="25" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kUg-gW-Ct6"/>
                                         </constraints>
@@ -40,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxT-2D-zma">
-                                        <frame key="frameInset" minX="8" minY="82" width="141" height="30"/>
+                                        <rect key="frame" x="8" y="82" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="141" id="urp-WR-tIb"/>
                                             <constraint firstAttribute="height" constant="30" id="yn5-i5-5Tg"/>
@@ -54,7 +59,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwg-Zd-JmP">
-                                        <frame key="frameInset" minX="9" minY="136" width="141" height="30"/>
+                                        <rect key="frame" x="9" y="136" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="JDQ-ak-u7G"/>
                                         </constraints>
@@ -124,34 +129,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jW-uk-Shf">
-                                <frame key="frameInset" minX="158" minY="435" width="75" height="66"/>
+                                <rect key="frame" x="158" y="435" width="75" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play" image="play"/>
+                                <connections>
+                                    <action selector="playActionWithSender:" destination="GV3-H2-Il4" eventType="touchUpInside" id="gl6-1p-NBD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ell-Sf-FqC">
-                                <frame key="frameInset" minX="78" minY="436" width="72" height="64"/>
+                                <rect key="frame" x="78" y="436" width="72" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" title="Backward" image="back">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="rewindActionWithSender:" destination="GV3-H2-Il4" eventType="touchUpInside" id="4Yb-Pm-znT"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jmb-zf-5c7">
-                                <frame key="frameInset" minX="41" minY="74" width="293" height="282"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-Qj-1hU">
-                                <frame key="frameInset" minX="41" minY="405" width="293" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-aU-OqG">
-                                <frame key="frameInset" minX="241" minY="436" width="66" height="68"/>
+                                <rect key="frame" x="241" y="436" width="66" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Foward" image="forward"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QvU-TY-gOi">
+                                <rect key="frame" x="-150" y="64" width="150" height="603"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIy-G1-tqf">
+                                        <rect key="frame" x="8" y="25" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="0qk-fs-lM7"/>
                                         </constraints>
@@ -161,7 +166,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJr-hI-Sh1">
-                                        <frame key="frameInset" minX="8" minY="82" width="141" height="30"/>
+                                        <rect key="frame" x="8" y="82" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="141" id="AEG-qy-exx"/>
                                             <constraint firstAttribute="height" constant="30" id="OYH-zz-qH2"/>
@@ -172,7 +177,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK5-l1-hXt">
-                                        <frame key="frameInset" minX="9" minY="136" width="141" height="30"/>
+                                        <rect key="frame" x="9" y="136" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="BH2-NI-IY3"/>
                                         </constraints>
@@ -189,7 +194,6 @@
                                     <constraint firstItem="tJr-hI-Sh1" firstAttribute="trailing" secondItem="rIy-G1-tqf" secondAttribute="trailing" id="8VI-Tt-d1I"/>
                                     <constraint firstItem="tJr-hI-Sh1" firstAttribute="top" secondItem="rIy-G1-tqf" secondAttribute="bottom" constant="32" id="8pn-3k-giP"/>
                                     <constraint firstItem="rIy-G1-tqf" firstAttribute="leading" secondItem="QvU-TY-gOi" secondAttribute="leadingMargin" id="AHp-me-xgg"/>
-                                    <constraint firstItem="dK5-l1-hXt" firstAttribute="top" secondItem="tJr-hI-Sh1" secondAttribute="bottom" constant="32" id="Jx0-Sv-2ab"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="MLW-2X-mNe"/>
                                     <constraint firstItem="tJr-hI-Sh1" firstAttribute="leading" secondItem="rIy-G1-tqf" secondAttribute="leading" id="Nkg-Ga-r6Q"/>
                                     <constraint firstAttribute="trailing" secondItem="dK5-l1-hXt" secondAttribute="trailing" id="YLe-QC-l9r"/>
@@ -202,8 +206,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KH3-wy-SYh">
+                                <rect key="frame" x="-150" y="64" width="150" height="603"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj0-3H-RnQ">
+                                        <rect key="frame" x="8" y="25" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="vBF-nB-PdS"/>
                                         </constraints>
@@ -216,7 +222,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cb-5m-e6M">
-                                        <frame key="frameInset" minX="8" minY="82" width="141" height="30"/>
+                                        <rect key="frame" x="8" y="82" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="141" id="TMa-wZ-rZF"/>
                                             <constraint firstAttribute="height" constant="30" id="sGV-mG-UUe"/>
@@ -227,7 +233,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-GU-V0e">
-                                        <frame key="frameInset" minX="9" minY="136" width="141" height="30"/>
+                                        <rect key="frame" x="9" y="136" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="JzI-3J-HOr"/>
                                         </constraints>
@@ -253,12 +259,22 @@
                                     <constraint firstItem="7cb-5m-e6M" firstAttribute="leading" secondItem="KH3-wy-SYh" secondAttribute="leading" constant="8" id="aRt-GW-ndp"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="dHS-5u-BIm"/>
                                     <constraint firstAttribute="trailing" secondItem="yLd-GU-V0e" secondAttribute="trailing" id="euz-aw-gG6"/>
-                                    <constraint firstItem="yLd-GU-V0e" firstAttribute="top" secondItem="7cb-5m-e6M" secondAttribute="bottom" constant="32" id="h4G-KI-PKb"/>
                                     <constraint firstItem="7cb-5m-e6M" firstAttribute="leading" secondItem="zj0-3H-RnQ" secondAttribute="leading" id="qi7-Su-skm"/>
                                     <constraint firstAttribute="trailing" secondItem="zj0-3H-RnQ" secondAttribute="trailing" constant="1" id="vL1-qU-hKs"/>
                                     <constraint firstItem="7cb-5m-e6M" firstAttribute="top" secondItem="zj0-3H-RnQ" secondAttribute="bottom" constant="32" id="vkB-AQ-HT5"/>
                                 </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k7l-DZ-T0s">
+                                <rect key="frame" x="39" y="397" width="297" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="audioTimeSlider:" destination="GV3-H2-Il4" eventType="valueChanged" id="XzP-h3-mwH"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jmb-zf-5c7">
+                                <rect key="frame" x="41" y="92" width="293" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
@@ -279,7 +295,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="fowardButton" destination="8AK-aU-OqG" id="BJu-Gb-NwH"/>
                         <outlet property="leadingConstraint" destination="wem-xt-7Gz" id="XYa-sX-XQe"/>
+                        <outlet property="playButton" destination="4jW-uk-Shf" id="MIN-Ij-JVC"/>
+                        <outlet property="rewindButton" destination="ell-Sf-FqC" id="VUl-fd-7it"/>
+                        <outlet property="scrubber" destination="k7l-DZ-T0s" id="Ar8-ts-MtZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxA-lr-n0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -336,13 +356,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iuE-5I-duq">
-                                <frame key="frameInset" minX="16" minY="124" width="343" height="543"/>
+                                <rect key="frame" x="16" y="124" width="343" height="543"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7k-Ch-UDI">
+                                <rect key="frame" x="-150" y="64" width="150" height="603"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckp-Og-C0y">
+                                        <rect key="frame" x="8" y="25" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="OwD-KM-bei"/>
                                         </constraints>
@@ -352,7 +374,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcf-Mm-LUy">
-                                        <frame key="frameInset" minX="8" minY="82" width="141" height="30"/>
+                                        <rect key="frame" x="8" y="82" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="FFs-9l-oze"/>
                                             <constraint firstAttribute="width" constant="141" id="Y9s-wl-Nlb"/>
@@ -366,7 +388,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0I3-Zg-M45">
-                                        <frame key="frameInset" minX="9" minY="136" width="141" height="30"/>
+                                        <rect key="frame" x="9" y="136" width="141" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="pxK-ob-O6B"/>
                                         </constraints>
