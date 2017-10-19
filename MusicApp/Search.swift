@@ -20,31 +20,6 @@ class Search: UIViewController{
     
     typealias JSONStandard =  [String : AnyObject]
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        callAlamo(url: searchURL)
-    }
-    
-    func callAlamo(url : String){
-        Alamofire.request(url).responseJSON(completionHandler: {
-            response in
-            
-            self.parseData(JSONData: response.data!)
-        })
-    }
-    
-    func parseData(JSONData : Data) {
-        do {
-            var readableJSON = try JSONSerialization.jsonObject(with: JSONData, options: .mutableContainers) as? JSONStandard
-            print(readableJSON)
-        }
-        catch {
-            print(error)
-        }
-    }
-    
     @IBAction func toggleMenu(_ sender: AnyObject) {
         
         if(menuShowing){
